@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'F37 Judge';
+    src: local('F37 Judge Regular Condensed'), local('F37-Judge-Regular-Condensed'),
+        url('F37Judge-RegularCondensed.woff2') format('woff2'),
+        url('F37Judge-RegularCondensed.woff') format('woff'),
+        url('F37Judge-RegularCondensed.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Inter'), url("Inter-Black.otf"), url("Inter-BlackItalic.otf"), url("Inter-Bold.otf"),
+    url("Inter-BoldItalic.otf"), url("Inter-ExtraBold.otf"), url("Inter-ExtraBoldItalic.otf"), url("Inter-ExtraLight.otf"),
+    url("Inter-ExtraLightItalic.otf"), url("Inter-Italic.otf"), url("Inter-Light.otf"), url("Inter-LightItalic.otf"),
+    url("Inter-Medium.otf"), url("Inter-MediumItalic.otf"), url("Inter-Regular.otf"), url("Inter-SemiBold.otf"),
+    url("Inter-SemiBoldItalic.otf"), url("Inter-Thin.otf"), url("Inter-ThinItalic.otf") format('otf'),
+    local('Inter-V'), url("Inter-V.ttf") format('ttf');
+}
+
+@font-face {
+    font-family: 'a_LCDNova';
+    font-style: normal;
+    font-weight: 400;
+    src: local('a_LCDNova'), local('a_LCDNova-Regular'),
+    url('a_lcdnova_[allfont.ru].ttf') format('truetype');
+}
