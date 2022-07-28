@@ -5,7 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /*overflow-x: hidden;*/
 }
+
+html, body {
+  scrollbar-color: #555555 #000; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin;  /* толщина */
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -54,7 +62,7 @@ code {
 
 .logo {
   height: 50px;
-  background-image: url("../public/logo_v10.jpg");
+  background-image: url("../public/screen_log_bg.png");
 }
 
 .abs-center {
@@ -154,7 +162,14 @@ ul.list-menu li {
 }
 
 .bg-space-2-gradient-top {
-  top: -35px;
+  top: -85px;
+  position: absolute;
+  height: 50px;
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7456116235556722) 51%, rgba(0,212,255,0) 100%);
+}
+
+.slider-gradient-top {
+  top: -45px;
   position: absolute;
   height: 50px;
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7456116235556722) 51%, rgba(0,212,255,0) 100%);
@@ -288,7 +303,7 @@ ul.list-menu li {
 
 /*---- END bg-space-4 END ----*/
 
-/*------START bg-space-2 -START------*/
+/*------START bg-space-5 -START------*/
 .bg-space-5 {
   height: 200px;
   background-image: url("../public/footer_logo.png");
@@ -308,6 +323,7 @@ ul.list-menu li {
 .bg-black-footer .wrapper-info .info {
   display: flex;
   margin-left: 40px;
+  margin-right: 40px;
 }
 
 .bg-black-footer .wrapper-info a, .bg-black-footer span {
@@ -319,6 +335,48 @@ ul.list-menu li {
   border-bottom: 1px solid #8E8E8E;
 }
 
+.carousel {
+  position: relative;
+}
+
+.carousel-item {
+  position: absolute;
+  visibility: hidden;
+  background: #fec901;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  user-select: none;
+}
+
+.carousel-item.visible {
+  visibility: visible;
+}
+
+.sl {
+  padding-bottom: 50px;
+  position: relative;
+  background: black;
+}
+
+.wrapper-sliders {
+  position: relative;
+}
+
+.slider-items-nft {
+  margin-left: 20px;
+  background: black;
+
+}
+
+.slider-items-nft img {
+  max-height: 400px;
+}
 /*------END bg-space-2 -END------*/
 
 .wrapper-main {
@@ -367,10 +425,14 @@ ul.list-menu li {
 
 .btn-menu span:hover {
   margin-top: 15px;
-
+  color: hsla(0,0%,100%,.7);
   transition-property: width, left, top, height;
   transition-duration: 3s, 5s, 3s, 5s;
   border-bottom: 2px solid #152A9B;
+}
+
+.social {
+  color: white;
 }
 
 .wrapper-btn-type-buy {

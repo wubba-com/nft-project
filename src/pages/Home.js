@@ -1,14 +1,21 @@
 import React from "react";
-import Logo from "../../components/Logo";
-import Header from "../../components/Header";
+import Header from "../components/Header";
 import {Button} from "@mui/material";
+import NftSlider from "../components/NftSlider";
+import iTwitter from "../icons/twitter.png"
+import iDiscord from "../icons/discord.png"
+import iYoutube from "../icons/youtube.png"
 
 export default class Home extends React.Component {
     constructor(props) {
         super(props);
     }
 
+
+
     render() {
+
+
         let btns = [{text:'buy otherdeed', link: ''}, {text: 'connect', link: ''}]
         return (
             <div className="center">
@@ -27,6 +34,11 @@ export default class Home extends React.Component {
                     </div>
 
                 </div>
+                <div className="sl">
+                    <div className="slider-gradient-top col-12"></div>
+                    <NftSlider/>
+                </div>
+
                 <div className="bg-space-2">
                     <div className="bg-space-2-gradient-top col-12"></div>
                     <div>
@@ -51,7 +63,8 @@ export default class Home extends React.Component {
 
                     <div className="bg-space-2-gradient-bottom col-12"></div>
                 </div>
-                <div className="bg-space-3">
+
+                <div className="bg-space-3 col-12">
                     <div className="text-3">
                         <div className="left-text">
                             <p className="text-3_h" style={{marginTop: 0}}>First to the future</p>
@@ -162,18 +175,22 @@ export default class Home extends React.Component {
                             <span className="labs">© 2022 Yuga Labs Inc.</span>
 
                             <div className="info">
-                                <a href="">faqs</a>
-                                <a href="">Terms & conditions</a>
-                                <a href="">Privacy</a>
-                                <a href="">License</a>
-                                <a href="">NFt Purchase Agreement</a>
+                                <a href="src/pages/Home">faqs</a>
+                                <a href="src/pages/Home">Terms & conditions</a>
+                                <a href="src/pages/Home">Privacy</a>
+                                <a href="src/pages/Home">License</a>
+                                <a href="src/pages/Home">NFt Purchase Agreement</a>
+                            </div>
+
+                            <div className="social">
+                                <a target="_blank" href="https://twitter.com/OthersideMeta"><img src={iTwitter}/></a>
+                                <a target="_blank" href="https://discord.com/invite/the-otherside"><img src={iDiscord}/></a>
+                                <a target="_blank" href="https://www.youtube.com/channel/UCB6R9NAjkgxQi_QEkc4O25Q"><img src={iYoutube}/></a>
                             </div>
                         </div>
                         <div className="bg-space-5 col-12"></div>
                     </div>
                 </div>
-
-
             </div>
 
         )
